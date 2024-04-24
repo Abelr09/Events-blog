@@ -3,87 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog de Eventos</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/cropped-estrella-3-32x32.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <!--BLOG-SECTION----->
-    <section id="blog">
-      <!--Heading----->
-      <div class="blog-heading">
-        <span>My recent Posts</span>
-        <h3>Events Blog</h3>
+    <!----------------------------Header-Menu------------------------------->
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h1>Events<b>Blog</b></h1>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li class="menu-select">
+                <a href="#" class="text-menu-select">Blog</a>
+              </li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+    </header>
+    <!----------------------------Portada------------------------------->
+    <div class="container-cover">
+      <div class="container-info-cover">
+        <h1>Universidad Católica</h1>
+        <p>La tradición de formar los mejores</p>
+      </div>
+    </div>
 
-      <!--blog-container---->
-      <div class="blog-container">
-        <!--box-1------->
-        <div class="blog-box">
-          <!--IMG----->
-          <div class="blog-img">
-            <img src="" alt="" />
+    <section class="post-list">
+      <div class="content">
+        <!---------------------ARTICLE 1------------------------->
+        <article class="post">
+          <div class="post-header">
+            <div class="post-img-1"></div>
           </div>
-
-          <!--text---->
-          <div class="blog-text">
-            <span>18 July 2023 / Web Design</span>
-            <a href="#" class="blog-title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              enim.</a
-            >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure
-              omnis et alias nulla natus, sit rerum velit porro ducimus?
+          <div class="post-body">
+            <span>5 sep, 2023 | Diseño Web</span>
+            <h2>Peña UCSI</h2>
+            <p class="description">
+              Peña Folklórica Competencia de Canto y Baile 🎶🎤 💃🏻🎊🇵🇾
             </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-
-        <!--box-1------->
-        <div class="blog-box">
-          <!--IMG----->
-          <div class="blog-img">
-            <img src="" alt="" />
-          </div>
-
-          <!--text---->
-          <div class="blog-text">
-            <span>18 July 2023 / Web Design</span>
-            <a href="#" class="blog-title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              enim.</a
+            <a
+              href="https://www.facebook.com/juegosucsi2016/posts/349967504096306"
+              class="post-link"
+              target="_blank"
+              >Leer Más...</a
             >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure
-              omnis et alias nulla natus, sit rerum velit porro ducimus?
+          </div>
+        </article>
+        <!--------------------ARTICLE 2-------------------------->
+        <article class="post">
+          <div class="post-header">
+            <div class="post-img-2"></div>
+          </div>
+          <div class="post-body">
+            <span>3 oct, 2023 | Diseño Web</span>
+            <h2>Juegos UCSI</h2>
+            <p class="description">
+              Noche Inaugural Juegos UCSI 2023, desfile de delegaciones
             </p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-
-        <!--box-1------->
-        <div class="blog-box">
-          <!--IMG----->
-          <div class="blog-img">
-            <img src="" alt="" />
-          </div>
-
-          <!--text---->
-          <div class="blog-text">
-            <span>18 July 2023 / Web Design</span>
-            <a href="#" class="blog-title"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-              enim.</a
+            <a
+              href="https://www.instagram.com/juegosucsi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="post-link"
+              target="_blank"
+              >Leer Más...</a
             >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure
-              omnis et alias nulla natus, sit rerum velit porro ducimus?
-            </p>
-            <a href="#">Read More</a>
           </div>
-        </div>
+        </article>
+        <!-----------------------ARTICLE 3--------------------------->
+        <article class="post">
+          <div class="post-header">
+            <div class="post-img-3"></div>
+          </div>
+          <div class="post-body">
+            <span>25 Marzo, 2023 | Diseño Web</span>
+            <h2>Viacrucis</h2>
+            <p class="description">
+              Se llevó a cabo la celebración del Viarucis en el predio de la
+              Universidad Católica San Ignacio Guazú, con la participación de...
+            </p>
+            <a
+              href="https://www.facebook.com/UniversidadCatolicaSanIgnacioGuazu/posts/927163785871182"
+              class="post-link"
+              target="_blank"
+              >Leer Más...</a
+            >
+          </div>
+        </article>
       </div>
     </section>
+
+    <script src="main.js"></script>
   </body>
 </html>

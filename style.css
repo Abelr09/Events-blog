@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b{
+    color: #1c63b4;
+}
+.menu{
+    height: 80px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-select:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #46a2fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: #777777;
+    font-size: 18px;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color: #46a2fd;
+    
+}
+
+.menu .text-menu-select{
+    color: #46a2fd;
+}
+/*PORTADA*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    background-image: url(/img/logo\ UC\ blanco.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 82, 126, 0.63);
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.post-img-1{
+    background: url(/img/peña.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    
+}
+.post-img-2{
+    background: url(/img/JuegosUcsi.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    
+}
+.post-img-3{
+    background: url(/img/Viacrucis.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    
+}
+.post{
+    box-shadow: 0 4px 25px -22px black;
+    overflow: hidden;
+    transition: .2s;
+}
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px 1px rgba(0, 0, 0, .15);
+}
+.post-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.post:hover .post-img-1,
+.post-img-2, .post-img-3{
+    transform: scale(1.1);
+}
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+.post-body h2{
+    margin-bottom: 15px;
+}
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+.post-body .post-link:hover{
+    background: #1c63b4;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+@media (max-width: 840px){
+    .content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .post-list{
+        margin-top: 10vh;
+    }
+}
+@media (max-width: 600px){
+    .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
