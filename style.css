@@ -81,6 +81,30 @@ header{
 .menu .text-menu-select{
     color: #46a2fd;
 }
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background: #fafafa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    background: #f2f2f2;
+}
+.menu nav ul li a i{
+    display: none;
+}
+
 /*PORTADA*/
 .container-cover{
     width: 100%;
@@ -226,7 +250,128 @@ header{
     box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
     transform: translateY(-2px);
 }
+
+/*********FOOTER*******/
+
+.container-f{
+    width: 100%; 
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+
+}
+.container-f footer{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.container-f footer .logo-f{
+    text-align: center;
+}
+.container-f footer .logo-f img{
+    width: 100px;
+    border-radius: 100%;
+}
+.container-f footer .redes-f{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.container-f footer .redes-f .icon-redes{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+.container-f footer .redes-f .fa-facebook-square:hover{
+    background: #1c63b4;
+    color: #fff;
+}
+.container-f footer .redes-f .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
+    color: #fff;
+}
+.container-f footer .redes-f .fa-linkedin:hover{
+    background: #1c63b4;
+    color: #fff;
+}
+
+.container-f footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #a8a8a8;
+}
+.container-f h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #888777;
+    font-weight: 400px;
+}
+
+
+/*******************RESPONSIVE**********************/
+
 @media (max-width: 840px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+        
+    }
+    .move-container-all{
+        transform: translateX(300px);
+    }
+    .menu{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0px 20px -25px #000;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+    .menu nav ul{
+        flex-direction: column;
+
+    }
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+    .menu-select:before{
+        width: 0;
+
+    }
+    .menu ul li a{
+        margin-top: 40px;
+        color: #858585;
+    }
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    #icon-menu{
+        display: flex;
+    }
     .content{
         grid-template-columns: repeat(2,1fr);
     }

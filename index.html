@@ -2,107 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <script
+      src="https://kit.fontawesome.com/a112872640.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="/img/cropped-estrella-3-32x32.ico"
       type="image/x-icon"
     />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0
+      ,
+      maximum-scale=1.0, minimum-scale=1.0"
+    />
   </head>
   <body>
     <!----------------------------Header-Menu------------------------------->
+
     <header>
       <div class="header-content">
         <div class="logo">
           <h1>Events<b>Blog</b></h1>
         </div>
-        <div class="menu">
+        <div class="menu" id="show-menu">
           <nav>
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li class="menu-select">
-                <a href="#" class="text-menu-select">Blog</a>
+              <li>
+                <a href="#"><i class="fas fa-home"></i>Inicio</a>
               </li>
-              <li><a href="#">Contacto</a></li>
+              <li class="menu-select">
+                <a href="#" class="text-menu-select"
+                  ><i class="fab fa-blogger"></i>Blog</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="far fa-address-book"></i>Contacto</a>
+              </li>
               <li><a href="#"></a></li>
             </ul>
           </nav>
         </div>
       </div>
+      <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
     <!----------------------------Portada------------------------------->
-    <div class="container-cover">
-      <div class="container-info-cover">
-        <h1>Universidad Católica</h1>
-        <p>La tradición de formar los mejores</p>
+    <div class="container-all" id="move-content">
+      <div class="container-cover">
+        <div class="container-info-cover">
+          <h1>Universidad Católica</h1>
+          <p>La tradición de formar los mejores</p>
+        </div>
+      </div>
+
+      <section class="post-list">
+        <div class="content">
+          <!---------------------ARTICLE 1------------------------->
+          <article class="post">
+            <div class="post-header">
+              <div class="post-img-1"></div>
+            </div>
+            <div class="post-body">
+              <span>5 sep, 2023 | Diseño Web</span>
+              <h2>Peña UCSI</h2>
+              <p class="description">
+                Peña Folklórica Competencia de Canto y Baile 🎶🎤 💃🏻🎊🇵🇾
+              </p>
+              <a
+                href="https://www.facebook.com/juegosucsi2016/posts/349967504096306"
+                class="post-link"
+                target="_blank"
+                >Leer Más...</a
+              >
+            </div>
+          </article>
+          <!--------------------ARTICLE 2-------------------------->
+          <article class="post">
+            <div class="post-header">
+              <div class="post-img-2"></div>
+            </div>
+            <div class="post-body">
+              <span>3 oct, 2023 | Diseño Web</span>
+              <h2>Juegos UCSI</h2>
+              <p class="description">
+                Noche Inaugural Juegos UCSI 2023, desfile de delegaciones
+              </p>
+              <a
+                href="https://www.instagram.com/juegosucsi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="post-link"
+                target="_blank"
+                >Leer Más...</a
+              >
+            </div>
+          </article>
+          <!-----------------------ARTICLE 3--------------------------->
+          <article class="post">
+            <div class="post-header">
+              <div class="post-img-3"></div>
+            </div>
+            <div class="post-body">
+              <span>25 Marzo, 2023 | Diseño Web</span>
+              <h2>Viacrucis</h2>
+              <p class="description">
+                Se llevó a cabo la celebración del Viarucis en el predio de la
+                Universidad Católica San Ignacio Guazú, con la participación
+                de...
+              </p>
+              <a
+                href="https://www.facebook.com/UniversidadCatolicaSanIgnacioGuazu/posts/927163785871182"
+                class="post-link"
+                target="_blank"
+                >Leer Más...</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-------------------------------------FOOTER---------------------------------------------->
+
+      <div class="container-f">
+        <footer>
+          <div class="logo-f">
+            <img src="/img/logo UC azul.ico" alt="" />
+          </div>
+
+          <div class="redes-f">
+            <a href="#"><i class="fab fa-facebook-square icon-redes"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-redes"></i></a>
+            <a href="#"><i class="fab fa-linkedin icon-redes"></i></a>
+          </div>
+          <hr />
+          <h4>&copy;2024 EventsBlog - Todos los Derechos Reservados</h4>
+        </footer>
       </div>
     </div>
 
-    <section class="post-list">
-      <div class="content">
-        <!---------------------ARTICLE 1------------------------->
-        <article class="post">
-          <div class="post-header">
-            <div class="post-img-1"></div>
-          </div>
-          <div class="post-body">
-            <span>5 sep, 2023 | Diseño Web</span>
-            <h2>Peña UCSI</h2>
-            <p class="description">
-              Peña Folklórica Competencia de Canto y Baile 🎶🎤 💃🏻🎊🇵🇾
-            </p>
-            <a
-              href="https://www.facebook.com/juegosucsi2016/posts/349967504096306"
-              class="post-link"
-              target="_blank"
-              >Leer Más...</a
-            >
-          </div>
-        </article>
-        <!--------------------ARTICLE 2-------------------------->
-        <article class="post">
-          <div class="post-header">
-            <div class="post-img-2"></div>
-          </div>
-          <div class="post-body">
-            <span>3 oct, 2023 | Diseño Web</span>
-            <h2>Juegos UCSI</h2>
-            <p class="description">
-              Noche Inaugural Juegos UCSI 2023, desfile de delegaciones
-            </p>
-            <a
-              href="https://www.instagram.com/juegosucsi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              class="post-link"
-              target="_blank"
-              >Leer Más...</a
-            >
-          </div>
-        </article>
-        <!-----------------------ARTICLE 3--------------------------->
-        <article class="post">
-          <div class="post-header">
-            <div class="post-img-3"></div>
-          </div>
-          <div class="post-body">
-            <span>25 Marzo, 2023 | Diseño Web</span>
-            <h2>Viacrucis</h2>
-            <p class="description">
-              Se llevó a cabo la celebración del Viarucis en el predio de la
-              Universidad Católica San Ignacio Guazú, con la participación de...
-            </p>
-            <a
-              href="https://www.facebook.com/UniversidadCatolicaSanIgnacioGuazu/posts/927163785871182"
-              class="post-link"
-              target="_blank"
-              >Leer Más...</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
