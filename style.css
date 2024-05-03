@@ -251,34 +251,34 @@ header{
     transform: translateY(-2px);
 }
 
+
 /*********FOOTER*******/
 
-.container-f{
-    width: 100%; 
-    padding: 40px 0;
-    background: #f7f7f7;
-    margin-top: 40px;
-
+.pie{
+    background: #46a2fd;
 }
-.container-f footer{
-    max-width: 1200px;
-    margin: auto;
-
+.header{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
-.container-f footer .logo-f{
-    text-align: center;
+.logo{
+    display: flex;
+    align-items: center;
 }
-.container-f footer .logo-f img{
-    width: 100px;
+img{
+    width: 140px;
     border-radius: 100%;
 }
-.container-f footer .redes-f{
+
+footer .redes-f{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
-.container-f footer .redes-f .icon-redes{
+footer .redes-f .icon-redes{
     font-size: 20px;
     margin: 20px;
     background: #efefef;
@@ -290,30 +290,91 @@ header{
     border-radius: 100%;
     color: #a2a2a2;
 }
-.container-f footer .redes-f .fa-facebook-square:hover{
+footer .redes-f .fa-facebook-square:hover{
     background: #1c63b4;
     color: #fff;
 }
-.container-f footer .redes-f .fa-instagram:hover{
+footer .redes-f .fa-instagram:hover{
     background: linear-gradient(to top right, #FCDE30, #E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
     color: #fff;
 }
-.container-f footer .redes-f .fa-linkedin:hover{
+footer .redes-f .fa-linkedin:hover{
     background: #1c63b4;
     color: #fff;
 }
 
-.container-f footer hr{
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.section div{
+    display: flex;
+    flex-direction: column;
+}
+div h2{
+    color: #fff;
+    padding: 10px 10px 0 0;
+}
+.section div a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.527);
+    padding: 3px;
+}
+.email{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    padding: 4px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+.comment {
+    min-height: 180px;
+  }
+.comment{
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+label[for=email],
+label[for=comment]{
+    color: #fff;
+    padding: 10px 10px 0 0;
+  }
+.section button{
+    padding: 10px 20px;
+    background: #fff;
+    color: #1c63b4;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1c63b4;
+    color: #fff;
+}
+
+.pie hr{
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: #a8a8a8;
-}
-.container-f h4{
-    text-align: center;
-    margin-top: 40px;
-    color: #888777;
-    font-weight: 400px;
+    background: #fff;
 }
 
 
