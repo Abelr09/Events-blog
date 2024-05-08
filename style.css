@@ -264,31 +264,53 @@ header{
 
 /*********FOOTER*******/
 
-.pie{
-    background: #46a2fd;
+.container-f{
+    width: 100%; 
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+
 }
-.header{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+.container-f footer{
+    max-width: 1200px;
+    margin: auto;
+
 }
-.logo{
-    display: flex;
-    align-items: center;
+.container-f footer .logo-f{
+    text-align: center;
 }
-img{
-    width: 140px;
+.container-f footer .logo-f img{
+    width: 100px;
     border-radius: 100%;
 }
-
-footer .redes-f{
+.container-f footer .main-f{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-f footer .suscribe{
+    display: flex;
+    margin: 0 auto;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
 
 }
-footer .redes-f .icon-redes{
+.container-f footer .comment{
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    margin: 0.5rem auto;
+}
+.container-f footer .redes-f{
+    display: flex;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-f footer .redes-f .icon-redes{
     font-size: 20px;
     margin: 20px;
     background: #efefef;
@@ -300,91 +322,75 @@ footer .redes-f .icon-redes{
     border-radius: 100%;
     color: #a2a2a2;
 }
-footer .redes-f .fa-facebook-square:hover{
+label[type="email"]{
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1em;
+}
+.container-f footer .email-f {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid rgb(192, 192, 192);
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+}
+.container-f footer .comment-f {
+    display: block;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid rgb(192, 192, 192);
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    /* margin-top: 20px; */
+}
+input[type="submit"]{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 30%;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+    border: none;
+}
+input[type="submit"]:hover{
+    background: #1c63b4;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.container-f footer .redes-f .fa-facebook-square:hover{
     background: #1c63b4;
     color: #fff;
 }
-footer .redes-f .fa-instagram:hover{
+.container-f footer .redes-f .fa-instagram:hover{
     background: linear-gradient(to top right, #FCDE30, #E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
     color: #fff;
 }
-footer .redes-f .fa-linkedin:hover{
+.container-f footer .redes-f .fa-linkedin:hover{
     background: #1c63b4;
     color: #fff;
 }
 
-.section{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-}
-.section div{
-    display: flex;
-    flex-direction: column;
-}
-div h2{
-    color: #fff;
-    padding: 10px 10px 0 0;
-}
-.section div a{
-    text-decoration: none;
-    color:rgba(255, 255, 255, 0.527);
-    padding: 3px;
-}
-.email{
-    display: block;
-    width: 100%;
-    height: 30px;
-    margin-top: 30px;
-    padding: 4px;
-    color: #000000;
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-.comment {
-    min-height: 180px;
-  }
-.comment{
-    display: block;
-    width: 100%;
-    height: 35px;
-    padding: 5px 10px;
-    color: #000000;
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-bottom: 40px;
-  }
-
-label[for=email],
-label[for=comment]{
-    color: #fff;
-    padding: 10px 10px 0 0;
-  }
-.section button{
-    padding: 10px 20px;
-    background: #fff;
-    color: #1c63b4;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.derechos{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #1c63b4;
-    color: #fff;
-}
-
-.pie hr{
+.container-f footer hr{
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: #fff;
+    background: #a8a8a8;
+}
+.container-f h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #888777;
+    font-weight: 400px;
 }
 
 
@@ -451,6 +457,14 @@ label[for=comment]{
         margin-top: 10vh;
     }
 }
+.container-f footer .main-f{
+   /* display: relative;
+   z-index: 3;
+   width: 200px;
+   height: 200px; */
+
+}
+
 @media (max-width: 600px){
     .content{
         grid-template-columns: repeat(1,1fr);
