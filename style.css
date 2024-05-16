@@ -285,8 +285,8 @@ header{
 }
 .container-f footer .main-f{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .container-f footer .suscribe{
     display: flex;
@@ -303,6 +303,7 @@ header{
     backdrop-filter: blur(15px);
     border-radius: 20px;
     margin: 0.5rem auto;
+    padding-top: 10px;
 }
 .container-f footer .redes-f{
     display: flex;
@@ -323,13 +324,17 @@ header{
     color: #a2a2a2;
 }
 label[type="email"]{
-    display: block;
-    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     font-size: 1em;
 }
 .container-f footer .email-f {
     width: 100%;
     height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     background: transparent;
     outline: none;
     border: none;
@@ -338,7 +343,8 @@ label[type="email"]{
     padding: 0 35px 0 5px;
 }
 .container-f footer .comment-f {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     height: 50px;
     background: transparent;
     outline: none;
@@ -349,7 +355,7 @@ label[type="email"]{
     /* margin-top: 20px; */
 }
 input[type="submit"]{
-    display: block;
+    display: flex;
     text-decoration: none;
     padding: 10px;
     background: #2b6ebb;
@@ -456,13 +462,6 @@ input[type="submit"]:hover{
     .post-list{
         margin-top: 10vh;
     }
-}
-.container-f footer .main-f{
-   /* display: relative;
-   z-index: 3;
-   width: 200px;
-   height: 200px; */
-
 }
 
 @media (max-width: 600px){
