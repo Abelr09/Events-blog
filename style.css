@@ -9,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Source Code Pro", monospace;
+    font-family:'Times New Roman', "Source Code Pro", monospace;
 }
 header{
     position: fixed;
@@ -36,7 +36,9 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+.logo h1{
+    font-size: 1.5em;
+}
 .logo h1 b{
     color: #1c63b4;
 }
@@ -146,7 +148,7 @@ header{
 }
 
 .container-info-cover h1{
-    font-size: 70px;
+    font-size: 4em;
     font-weight: 500;
     color: #fff;
     margin-bottom: 20px;
@@ -154,7 +156,7 @@ header{
 
 .container-info-cover p{
     color: #fff;
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -173,7 +175,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 1000px;
-    margin: auto;
+    margin-top: 100px;
     
 }
 .post-img-1{
@@ -203,6 +205,15 @@ header{
     transition: .2s;
     border-radius: 17%;
 }
+.post-img-4{
+    background: url(/img/30.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    border-radius: 2%;
+}
 .post{
     box-shadow: 0 4px 25px -22px black;
     overflow: hidden;
@@ -220,7 +231,7 @@ header{
 
 }
 .post:hover .post-img-1,
-.post-img-2, .post-img-3{
+.post-img-2, .post-img-3, .post-img-4{
     transform: scale(1.1);
 }
 .post-body{
@@ -286,26 +297,52 @@ header{
 .container-f footer .main-f{
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin-top: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 30px 0;
 }
 .container-f footer .suscribe{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    height: 155px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    justify-content: center;
-    align-items: center;
-
 }
-.container-f footer .comment{
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    margin: 20px auto;
-    padding-top: 10px;
+.suscribe input{
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #0f0f0f;
+    transition: 0.15s all ease;
+    width: 300px;
+}
+
+.suscribe input::placeholder{
+    color: transparent;
+}
+
+.suscribe label{
+    position: absolute;
+    left: 13%;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #0f0f0f;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+.suscribe input:focus + label,
+.suscribe input:not(:placeholder-shown) +
+label{
+    transform: translate(5px, -22px);
+    border-radius: 5px;
+    font-size: 15px;
+    color: #0f0f0f;
+}
+.suscribe input{
+    outline: none;
+    border: none;
+    border-bottom: 2.5px solid rgb(192, 192, 192);
 }
 .container-f footer .redes-f{
     display: flex;
@@ -327,37 +364,24 @@ header{
     border-radius: 100%;
     color: #a2a2a2;
 }
-label[type="email"]{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 1em;
-}
-.container-f footer .email-f {
-    width: 100%;
+
+.container-f footer .comment-f {
+    width: 800;
     height: 40px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1.5px solid rgb(192, 192, 192);
-    font-size: 1em;
-    padding: 0 35px 0 5px;
-}
-.container-f footer .comment-f {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    background: transparent;
-    outline: none;
-    border: none;
-    border-bottom: 1.5px solid rgb(192, 192, 192);
+    border-radius: 10%;
+    border-bottom: 2.5px solid rgb(192, 192, 192);
     font-size: 1em;
     padding: 0 35px 0 5px;
     /* margin-top: 20px; */
+}
+
+.container-f footer .comment{
+    margin: auto;
+    margin-top: -1%;
 }
 input[type="submit"]{
     display: flex;
@@ -403,6 +427,8 @@ input[type="submit"]:hover{
     margin-top: 40px;
     color: #888777;
     font-weight: 400px;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -474,4 +500,13 @@ input[type="submit"]:hover{
     .content{
         grid-template-columns: repeat(1,1fr);
     }
+    .container-f footer .main-f{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .main-f .suscribe .form-email{
+        padding-left: 10px;
+    }
+
 }
