@@ -323,7 +323,6 @@ header{
 }
 .suscribe input{
     padding: 8px 10px;
-    font-size: 18px;
     border-radius: 10px;
     border: #acacac solid 2px;
     background-color: transparent;
@@ -508,6 +507,9 @@ input[type="submit"]:hover{
     .post-list{
         margin-top: 10vh;
     }
+    footer .main-f label{
+        margin-left: -50px;
+    }
 }
 
 @media (max-width: 600px){
@@ -519,8 +521,8 @@ input[type="submit"]:hover{
         justify-content: center;
         margin-top: 15px;
     }
-    .main-f .suscribe .form-email{
-        padding-left: 10px;
+    footer .main-f label{
+        margin-left: 75px;
     }
-
 }
+
