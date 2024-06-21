@@ -17,4 +17,28 @@ document.addEventListener("DOMContentLoaded", function (e) {
   alturaMaxima = Math.max.apply(Math, alturas);
 
   aplicarAlturas();
+
+  const futureBtn = document.getElementById("future-btn");
+  const previousBtn = document.getElementById("previous-btn");
+
+  const blogContentFuture = document.getElementById("blog-content-future");
+  const blogContentPrevious = document.getElementById("blog-content-previous");
+
+  futureBtn.onclick = () => {
+    showElement(blogContentFuture)
+    hiddenElement(blogContentPrevious)
+  };
+
+  previousBtn.onclick = () => {
+    showElement(blogContentPrevious)
+    hiddenElement(blogContentFuture)
+    
+  };
 });
+function showElement(element){
+  element.classList.remove('hidden')
+}
+
+function hiddenElement(element){
+  element.classList.add('hidden')
+}

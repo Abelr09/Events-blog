@@ -11,7 +11,6 @@ function mostrar_menu() {
 let previusTitle = document.title;
 
 window.addEventListener("blur", () => {
-  previusTitle = document.title;
   document.title = "¡No te vayas!¡Vuelve!😱";
 });
 

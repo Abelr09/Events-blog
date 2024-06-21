@@ -163,19 +163,16 @@ header{
 
 .post-list{
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding: 30px 15px;
-    
 }
 
 .content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    max-width: 1000px;
-    margin-top: 100px;
+    max-width: 1000px
     
 }
 .post-img-0{
@@ -286,6 +283,22 @@ header{
     transform: translateY(-2px);
 }
 
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 30px;
+    margin-top: 85px;
+}
+.sec-btn{
+    margin: 10px;
+    padding: 5px;
+}
+
+.hidden{
+    display: none;
+}
 
 /*********FOOTER*******/
 
@@ -503,9 +516,6 @@ input[type="submit"]:hover{
     .content{
         grid-template-columns: repeat(2,1fr);
         
-    }
-    .post-list{
-        margin-top: 10vh;
     }
     footer .main-f label{
         margin-left: -50px;
