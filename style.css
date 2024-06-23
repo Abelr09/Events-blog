@@ -342,16 +342,16 @@ header {
 }
 
 .main-container {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .container-f .logo-f {
-  text-align:center;
+  text-align: center;
   margin-top: -45px;
 }
-.container-f .logo-f img{
-    max-width: 400px;
+.container-f .logo-f img {
+  max-width: 400px;
 }
 
 .container-f .main-f {
@@ -359,129 +359,127 @@ header {
   position: relative;
 }
 .form-container {
-    width: 400px;
-    background:transparent;
-    border: 2px solid transparent;
-    padding: 32px 24px;
-    font-size: 14px;
-    font-family: inherit;
-    color: #717171;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-size: 200% 100%;
-    animation: gradient 5s ease infinite;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .form-container .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-container .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  
-  .form-container .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #717171;
-    font-weight: 600;
-    font-size: 12px;
-  }
-  
-  .form-container .form-group input {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    color: #717171;
-    font-family: inherit;
-    background-color: transparent;
-      border: 2px solid rgb(200, 200, 200);
+  width: 400px;
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #717171;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .form-container .form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    resize: none;
-    color: #717171;
-    height: 96px;
-    border: 2px solid rgb(200, 200, 200);
 
-    background-color: transparent;
-    font-family: inherit;
-    
+  50% {
+    background-position: 100% 50%;
   }
-  .form-container .form-group input::placeholder {
-    opacity: 0.5;
+
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .form-container .form-group input:focus {
-    outline: none;
-    color: #717171;
-        border-color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #717171;
+  font-family: inherit;
+  background-color: transparent;
+  border: 2px solid rgb(200, 200, 200);
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #717171;
+  height: 96px;
+  border: 2px solid rgb(200, 200, 200);
+
+  background-color: transparent;
+  font-family: inherit;
+}
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  color: #717171;
+  border-color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
     0px 5px 5px -1px rgba(58, 125, 233, 0.25),
     inset 4px 4px 8px rgba(175, 230, 255, 0.5),
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-  }
-  
-  .form-container .form-group textarea:focus {
-    color: #717171;
-    border-color: var(--btn-bg-color);
-    outline: none;
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+}
+
+.form-container .form-group textarea:focus {
+  color: #717171;
+  border-color: var(--btn-bg-color);
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
     0px 5px 5px -1px rgba(58, 125, 233, 0.25),
     inset 4px 4px 8px rgba(175, 230, 255, 0.5),
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-  }
-  
-  .form-container .form-submit-btn {
-    cursor: pointer;
-    padding: 0.5em 1.4em;
-    min-width: 120px;
-    min-height: 44px;
-    margin: 10px;
-    font-size: var(--size, 1rem);
-    font-family: "Segoe UI", system-ui, sans-serif;
-    font-weight: 500;
-    transition: 0.8s;
-    background-size: 280% auto;
-    background-image: linear-gradient(
-      325deg,
-      var(--btn-bg-2) 0%,
-      var(--btn-bg-1) 55%,
-      var(--btn-bg-2) 90%
-    );
-    border: none;
-    border-radius: var(--radii);
-    color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
-      0px 5px 5px -1px rgba(58, 125, 233, 0.25),
-      inset 4px 4px 8px rgba(175, 230, 255, 0.5),
-      inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-  }
+}
+
+.form-container .form-submit-btn {
+  cursor: pointer;
+  padding: 0.5em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  margin: 10px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
 
 .container-f .redes-f {
   display: flex;
