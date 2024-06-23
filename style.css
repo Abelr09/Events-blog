@@ -592,21 +592,22 @@ header {
   .content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .main-f label {
-    margin-left: -50px;
-  }
 }
 
 @media (max-width: 600px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .container-f .main-f {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    margin-top: 15px;
+ .main-container {
+    display: flex;
+    flex-direction: column;
   }
-  .main-f label {
-    margin-left: 75px;
+  .main-container .main-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-f{
+    height: 350px;
   }
 }
