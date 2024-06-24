@@ -73,21 +73,46 @@
           <!---------------------ARTICLE 1------------------------->
           <article class="post">
             <a
-              href="https://www.instagram.com/seminarioucsi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/p/C8lTO8WO0mP/?utm_source=ig_web_copy_link"
               target="_blank"
               class="post-header"
             >
-              <img src="./img/sanjuan.jpeg" alt="" class="post-img" />
+              <img
+                src="./img/sanjuan.jpeg"
+                alt="Sanjuanucsi"
+                class="post-img"
+              />
             </a>
             <div class="post-body">
-              <span>28 jun, 2024 |<strong>Proximamente...</strong></span>
-              <h2>San Juan UCSI 🎉🎇🎈</h2>
+              <span class="proxi">
+                <strong>Faltan:</strong>
+                <div id="countdown">
+                  <div>
+                    <span id="days"></span
+                    ><span class="days-label color">Días</span>
+                  </div>
+                  <div>
+                    <span id="hours"></span
+                    ><span class="hours-label color">Horas</span>
+                  </div>
+                  <div>
+                    <span id="minutes"></span
+                    ><span class="minutes-label color">Minutos</span>
+                  </div>
+                  <div>
+                    <span id="seconds"></span
+                    ><span class="seconds-label color">Segundos</span>
+                  </div>
+                </div>
+              </span>
+              <h2>San Juan UCSI 🎉</h2>
               <p class="description">
-                Jakaru, Javy'a, Jajeroky🥳 <br />
-                Segunda edición del Sanjuanucsi
+                •Les esperamos a todos para el San Juanazo que realizamos en
+                nuestra querida casa de estudios! Habrán muchos juegos, comida y
+                diversión 🥳💙
               </p>
               <a
-                href="https://www.instagram.com/seminarioucsi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/p/C8lTO8WO0mP/?utm_source=ig_web_copy_link"
                 class="post-link"
                 target="_blank"
                 >Leer Más...</a
@@ -234,7 +259,13 @@
               <form class="form">
                 <div class="form-group">
                   <label for="email">Correo Electrónico</label>
-                  <input required="" name="email" id="email" type="text" placeholder="Ejemplo@gmail.com" /> 
+                  <input
+                    required=""
+                    name="email"
+                    id="email"
+                    type="text"
+                    placeholder="Ejemplo@gmail.com..."
+                  />
                 </div>
                 <div class="form-group">
                   <label for="textarea">¿Qué te pareció este artículo?</label>
@@ -244,18 +275,31 @@
                     cols="2"
                     rows="5"
                     id="textarea"
-                    name="textarea"></textarea>
+                    name="textarea"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn-donate">Submit</button>
+                <button type="submit" class="btn-donate">Enviar</button>
               </form>
             </div>
           </div>
         </div>
 
         <div class="redes-f">
-          <a href="#"><i class="fab fa-facebook-square icon-redes"></i></a>
-          <a href="#"><i class="fab fa-instagram icon-redes"></i></a>
-          <a href="#"><i class="fab fa-linkedin icon-redes"></i></a>
+          <a
+            href="https://www.facebook.com/pages/Universidad%20Catolica%20Campus%20San%20Ignacio/585702851452486"
+            target="_blank"
+            ><i class="fab fa-facebook-square icon-redes"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/uc_sanignaciopy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><i class="fab fa-instagram icon-redes"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/school/unicatolicapy/"
+            target="_blank"
+            ><i class="fab fa-linkedin icon-redes"></i
+          ></a>
         </div>
         <hr />
         <h4>&copy;2024 EventsBlog - Todos los Derechos Reservados</h4>
@@ -264,5 +308,6 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/countdown.js"></script>
   </body>
 </html>

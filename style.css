@@ -178,11 +178,36 @@ header {
   grid-gap: 20px;
   max-width: 1000px;
 }
+ /*----------TimeDown-------------*/
 
+
+ #countdown {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  width: 10em;
+  text-align: center;
+}
+
+#countdown div {
+  background: #f7f7f7;
+  padding: 5px;
+  margin-inline: 1px;
+  border-radius: 5px;
+}
+
+#countdown span {
+  font-size: 1em;
+  display: block;
+  color: #ff6347;
+}
+#countdown .color{
+  color: #717171;
+}
 .post-body span strong {
-  background: #be5454;
-  color: rgb(255, 252, 252);
-  font-weight: 200;
+  /* background: #f7f7f7; */
+  color: #ff6347;
+  font-size: 0.9em;
 }
 .post-img {
   width: 100%;
@@ -207,10 +232,7 @@ header {
   overflow: hidden;
   cursor: pointer;
 }
-.post:hover .post-img-1,
-.post-img-2,
-.post-img-3,
-.post-img-4 {
+.post:hover .post-img {
   transform: scale(1.1);
 }
 .post-body {
